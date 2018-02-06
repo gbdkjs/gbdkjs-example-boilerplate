@@ -3,5 +3,5 @@
 
 
 gbdkjs@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gbdkjs/-/gbdkjs-1.0.0.tgz#0e8ad6eb49a656a09aef93e949c8a148a4a53d66"
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/gbdkjs/-/gbdkjs-1.0.5.tgz#b985239ce23e9a09c6a61296a58fe0a4f3fcc0a9"
