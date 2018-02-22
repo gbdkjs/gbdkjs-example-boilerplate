@@ -51,9 +51,16 @@ void game_loop()
 {
   UBYTE joy;
   
-#ifdef __EMSCRIPTEN__    
-  update_registers(SCX_REG, SCY_REG, WX_REG, WY_REG, LYC_REG, BGP_REG, OBP0_REG, OBP1_REG);
-#endif
+  #ifdef __EMSCRIPTEN__    
+    emscripten_update_registers(
+      SCX_REG, SCY_REG,
+      WX_REG, WY_REG,
+      LYC_REG, LCDC_REG,
+      BGP_REG,
+      OBP0_REG, OBP1_REG
+    );
+  #endif
+
   wait_vbl_done();
 
   joy = joypad();
